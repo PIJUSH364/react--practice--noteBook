@@ -1,0 +1,8 @@
+Mounting Lifecycle Methods
+----------------------------------------------------------------
+1) constractor(props)
+
+--->a special function that get called whenever a new component is created
+--->initilizing state,Binding the event handlers
+--->super(props),Directly override this.state
+***Do not cause side effects . Ex: HTTP request ***

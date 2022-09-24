@@ -1,0 +1,3 @@
+what:  usecallBack is a hook that will return a "memoized" version of the callback fuction that only changes if one of the dependencies has changed.
+
+why : it is useful when passing callback to optimized child components that rely on reference equality to prevent unnecessary renders.

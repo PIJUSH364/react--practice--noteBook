@@ -1,0 +1,14 @@
+lifecycle method
+................................>>>>>
+
+muunting : when instace of component is being created and inserted into the dom
+methodas=>{constractor, static getDerivedStateFromProps ,render and component didMount}
+
+updating : when a component is being re-rendered as a result of changes to either its props or state
+methodas=>{ static getDerivedStateFromProps ,shouldComponetUpdate, render,getSnapshotBeforeUpdate,component didupdate}
+
+unmounting: when a componet is being removed from dom
+methodas=>{component willunMount}
+
+Error Handaling : when there is an error during rerendering ,in a lifecycle method,or in the constractor of any child component
+methodas=>{ static getDerivedStateFromError ,componentDidCatch}

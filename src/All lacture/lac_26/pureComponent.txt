@@ -1,0 +1,29 @@
+Regular component: A Regular component does not implement the shouldComponentUpdate method .it always returns true by defayult.
+
+Pure component:A Pure component on otherHand implement shouldComponentUpdate width a shallow props and state comparison;
+
+*************************************
+
+Shallow comparison(sc)
+
+Premitive Types : a (sc) b returns true if a and b have the same value and are of the same type 
+
+Complex Types: a (sc) b returns true if a and b reference the exact same object.
+
+
+ex:
+var a={x:1,y:2};
+var b={x:1,y:2};
+
+var c=a;
+var eq1=(a===b)//false-->both value are equal but reference different
+var eq2=(a===b)//true-->both value  and reference are equal
+
+********************************************
+
+Pure component
+___________________________________
+
+A pure component implements "shouldComponentUpdate" with a shallow prop and state comparison.
+
+***sc of prevstate width currentState and sc of preProps width currentProps if is ---->different then pure component re-render
